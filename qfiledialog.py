@@ -3,9 +3,17 @@
 # Autor:        Gabriel F
 # GitHub:       https://github.com/gab98fra/
 # Creado:       20 de Septiembre 2020
-# Modificado:   20 de Septiembre 2020
+# Modificado:   24 de Septiembre 2020
 # Copyright:    (c) 2020 by Gabriel F, 2020
 # ----------------------------------------------------------------------------
+
+"""
+    Ejemplo de QFileDialog: Abrir y guardar un archivo txt
+    
+    Python 3.8.2
+    PyQt 5.15.0
+
+"""
 
 from PyQt5.QtGui import QIcon, QFont 
 from PyQt5.QtCore import Qt    
@@ -14,10 +22,6 @@ from PyQt5.QtWidgets import (QApplication, QDialog, QPushButton, QTextEdit, QLab
 
 import sys
 
-"""
-    Ejemplo de QFileDialog: Abrir y guardar un archivo txt
-
-"""
 
 class aplicacion(QDialog):
 
