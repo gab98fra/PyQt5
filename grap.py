@@ -9,6 +9,9 @@
 
 """
     Gráfica circular o de pastel
+    Python 3.8.2
+    PyQt 5.15.0
+    PyQtChart 5.15.1
 
 """
 
