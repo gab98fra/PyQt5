@@ -3,7 +3,7 @@
 # Autor:        Gabriel F
 # GitHub:       https://github.com/gab98fra/
 # Creado:       24 de Septiembre 2020
-# Modificado:   24 de Septiembre 2020
+# Modificado:   01 de Octubre 2020
 # Copyright:    (c) 2020 by Gabriel F, 2020
 # ----------------------------------------------------------------------------
 
@@ -45,6 +45,7 @@ class window(QMainWindow):
 
 class widget_grafica(QWidget):
 #widget - gráfica
+
     def __init__(self, parent=None):
         super(widget_grafica, self).__init__(parent)
 
@@ -86,8 +87,8 @@ class widget_grafica(QWidget):
 
         #Layout
         layout = QGridLayout()
-        layout.addLayout(panel_widget,       1, 0, 1, 0)
-        layout.addWidget(contenedor_grafica, 2, 0, 4, 0)
+        layout.addLayout(panel_widget,       1, 0, 1, 0)#Agregar un layout: HBox..
+        layout.addWidget(contenedor_grafica, 2, 0, 4, 0)#Agregar un wigget
 
         self.setLayout(layout)
 
