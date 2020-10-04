@@ -3,13 +3,13 @@
 # Autor:        Gabriel F
 # GitHub:       https://github.com/gab98fra/
 # Creado:       03 de Septiembre 2020
-# Modificado:   03 de Septiembre 2020
+# Modificado:   04 de Septiembre 2020
 # Copyright:    (c) 2020 by Gabriel F, 2020
 # ----------------------------------------------------------------------------
 
 """
     Eventos y Focus PyQt5 
-    Eventos: mousePressEvent, clicked
+    Eventos: mousePressEvent y  clicked
     
     Python 3.8.2
     PyQt 5.15.0
@@ -29,7 +29,7 @@ class slots(QDialog):
     def __init__(self):
 
         super().__init__()
-        self.setWindowTitle("Eventos PyQt5")
+        self.setWindowTitle("Eventos PyQt5 by Gabriel F")
         self.setWindowIcon(QIcon("logo.png"))
         self.resize(400,400)
         self.setWindowFlags(Qt.WindowCloseButtonHint | Qt.MSWindowsFixedSizeDialogHint)
@@ -76,25 +76,25 @@ class slots(QDialog):
 
         #-------Eventos: clicked----------------
         self.pusbutton1.clicked.connect(self.click_aceptar)
-        #self.pusbutton2.clicked.connect(self.close)
+        self.pusbutton2.clicked.connect(self.close)
 
     def click_label(self, event):
         
-        self.message("MousePressEvent", "Realizó click en Label Focus")
+        self.message("MousePressEvent", "Realizó click en Label y Focus se encuentra en lineedit2")
         self.lineedit2.setFocus()
 
     def click_aceptar(self):
 
-        self.message("Clicked", "Realizó click en el botón Aceptar y Focus se encuentra en botoón:Cancelar y Salir")
+        self.message("Clicked", "Realizó click en el botón Aceptar y Focus se encuentra en botón: Cancelar y Salir")
         self.pusbutton2.setFocus()
 
 
-    def message(self, title, accion):
+    def message(self, title, m):
     #Ventana mensaje
 
         msg=QMessageBox(self)
         msg.setWindowTitle(title)
-        msg.setText(accion)
+        msg.setText(m)
         msg.setStandardButtons(QMessageBox.Ok)
         msg.exec_()
 
