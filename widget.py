@@ -1,17 +1,17 @@
 # ----------------------------------------------------------------------------
-# Nombre:       grap.py
+# Nombre:       widget.py
 # Autor:        Gabriel F
 # GitHub:       https://github.com/gab98fra/
-# Creado:       24 de Septiembre 2020
-# Modificado:   01 de Octubre 2020
+# Creado:       04 de Septiembre 2020
+# Modificado:   04 de Octubre 2020
 # Copyright:    (c) 2020 by Gabriel F, 2020
 # ----------------------------------------------------------------------------
 
 """
-    Gráfica circular o de pastel
+    Ventana con los widgets más comunes para un desarrollo GUi
+
     Python 3.8.2
     PyQt 5.15.0
-    PyQtChart 5.15.1
 
 """
 
