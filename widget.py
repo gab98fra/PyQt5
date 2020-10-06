@@ -19,7 +19,7 @@
 from PyQt5.QtGui import QFont, QIcon
 from PyQt5.QtCore import Qt, QTranslator, QLocale, QLibraryInfo
 from PyQt5.QtWidgets import (QApplication, QMainWindow, QWidget, QGridLayout, QVBoxLayout, QHBoxLayout,
-                             QLabel, QPushButton,  QComboBox, QSizePolicy, QCheckBox, QTreeWidget, QMessageBox)
+                             QLabel, QPushButton,  QComboBox, QTreeWidget, QMessageBox)
 
 import sys
 
@@ -51,9 +51,6 @@ class widget1(QWidget):
 
   def initUI(self):
   #Widgets
-
-    #Variables-widget
-    self.list_periodo=self.periodo()
         
     #-------Objeto: Qtable-------------------
     self.table_user=QTreeWidget()
@@ -126,10 +123,6 @@ class widget1(QWidget):
         msg.setStandardButtons(QMessageBox.Ok)
         msg.exec_()
 
-  def periodo(self):
-
-      return 0
-  
 
 if __name__ == "__main__":
     
