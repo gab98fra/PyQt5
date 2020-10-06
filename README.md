@@ -5,7 +5,8 @@ qfiledialog : Permite abrir y guardar archivos .txt
 
 graph: gráfica circular o de pastel
 
-slots: eventos: mousePressEvent y clicked 
+slots: eventos mousePressEvent y clicked 
 
 key: eventos keyPressEvent y closeEvent
 
+widget: widgets más comunes y utilizados
