@@ -8,7 +8,9 @@
 # ----------------------------------------------------------------------------
 
 """
-    Ventana con los widgets más comunes para un desarrollar GUI
+
+    QmainWindow con algunos widgets para desarrollar aplicaciones GUI
+
 
     Python 3.8.2
     PyQt 5.15.0
