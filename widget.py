@@ -61,7 +61,7 @@ class widget1(QWidget):
         
     #-------Objeto: QTreWidget-------------------
     self.table_user=QTreeWidget()
-    self.table_user.setHeaderLabels(("Usuario", "Pass", "Nombre", "Apellido", "Fecha de Nacimiento"))
+    self.table_user.setHeaderLabels(("Id_Usuario", "Mes", "Nombre", "Estatus", "Fecha de alta"))
     
     #Formato
     self.model=self.table_user.model()
