@@ -3,7 +3,7 @@
 # Autor:        Gabriel F
 # GitHub:       https://github.com/gab98fra/
 # Creado:       04 de Septiembre 2020
-# Modificado:   05 de Octubre 2020
+# Modificado:   06 de Octubre 2020
 # Copyright:    (c) 2020 by Gabriel F, 2020
 # ----------------------------------------------------------------------------
 
@@ -25,6 +25,7 @@ import sys
 
 class window(QMainWindow):
 #Ventana principal
+
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Widgets más comunes by Gabriel F")
@@ -37,7 +38,7 @@ class window(QMainWindow):
         font.setPointSize(9)
         self.setFont(font)
 
-        #Objeto gráfico/Asignar a la ventana principal
+        #Objeto widget/Asignar a la ventana principal
         widget=widget1()
         self.setCentralWidget(widget)
 
@@ -50,11 +51,16 @@ class widget1(QWidget):
     self.initUI()
 
   def initUI(self):
-  #Widgets
+  #----------------------Widgets-----------------------------
+
+    #Variables   -  método (retorna combobox con valores)
+    combobox_periodo=self.combobox_list_1()
+    combobox_categoria=self.combobox_list_2()
+    combobox_subcategoria=self.combobox_list_3()
+    combobox_marca=self.combobox_list_4()
         
-    #-------Objeto: Qtable-------------------
+    #-------Objeto: QTreWidget-------------------
     self.table_user=QTreeWidget()
-    #Campos de la tabla
     self.table_user.setHeaderLabels(("Usuario", "Pass", "Nombre", "Apellido", "Fecha de Nacimiento"))
     
     #Formato
@@ -66,30 +72,16 @@ class widget1(QWidget):
 
     self.table_user.setAlternatingRowColors(True)
     
-    #-------------Combobox------------------
-    combobox1=QComboBox()
-    combobox1.addItem("Periodo 1")
-    combobox1.addItem("Periodo 2")
-    combobox2=QComboBox()
-    combobox2.addItem("Categoría 1")
-    combobox2.addItem("Categoría 2")
-    combobox3=QComboBox()
-    combobox3.addItem("Sub-categoría 1")
-    combobox3.addItem("Sub-categoría 1")
-    combobox4=QComboBox()
-    combobox4.addItem("Marca 1")
-    combobox4.addItem("Marca 2")
-    
-    #----------Objeto Layout vertical para combobox--------
+    #----------Layout vertical para label y combobox--------
     vertical_layout=QVBoxLayout()
     vertical_layout.addWidget(QLabel("Seleccionar periodo"))
-    vertical_layout.addWidget(combobox1)
+    vertical_layout.addWidget(combobox_periodo)
     vertical_layout.addWidget(QLabel("Seleccionar categoría"))
-    vertical_layout.addWidget(combobox2)
+    vertical_layout.addWidget(combobox_categoria)
     vertical_layout.addWidget(QLabel("Seleccionar subcategoría"))
-    vertical_layout.addWidget(combobox3)
+    vertical_layout.addWidget(combobox_subcategoria)
     vertical_layout.addWidget(QLabel("Seleccionar marca"))
-    vertical_layout.addWidget(combobox4)
+    vertical_layout.addWidget(combobox_marca)
     vertical_layout.addStretch()#expandir
 
     #----------Objeto Layout vertical para QPushButton--------
@@ -110,10 +102,10 @@ class widget1(QWidget):
     self.setLayout(gridLayout1)
 
     #--------------Eventos combobox----------------------------------------
-    combobox1.currentIndexChanged.connect(self.message)
-    combobox2.currentIndexChanged.connect(self.message)
-    combobox3.currentIndexChanged.connect(self.message)
-    combobox4.currentIndexChanged.connect(self.message)
+    combobox_periodo.currentIndexChanged.connect(self.message)
+    combobox_categoria.currentIndexChanged.connect(self.message)
+    combobox_subcategoria.currentIndexChanged.connect(self.message)
+    combobox_marca.currentIndexChanged.connect(self.message)
     
   def message(self):
 
@@ -123,6 +115,46 @@ class widget1(QWidget):
         msg.setStandardButtons(QMessageBox.Ok)
         msg.exec_()
 
+  def combobox_list_1(self):
+    
+    list_combobox=QComboBox()
+
+    list_combobox.addItem("Periodo 1")
+    list_combobox.addItem("Periodo 2")
+    list_combobox.addItem("Periodo 3")
+    
+    return list_combobox
+
+  def combobox_list_2(self):
+    
+    list_combobox=QComboBox()
+
+    list_combobox.addItem("Categoría 1")
+    list_combobox.addItem("Categoría 2")
+    list_combobox.addItem("Categoría 3")
+    
+    return list_combobox
+
+  def combobox_list_3(self):
+    
+    list_combobox=QComboBox()
+
+    list_combobox.addItem("Subcategoría 1")
+    list_combobox.addItem("Subcategoría 2")
+    list_combobox.addItem("Subcategoría 3")
+    
+    return list_combobox
+
+  def combobox_list_4(self):
+    
+    list_combobox=QComboBox()
+
+    list_combobox.addItem("Marca 1")
+    list_combobox.addItem("Marca 2")
+    list_combobox.addItem("Marca 3")
+    
+    return list_combobox
+    
 
 if __name__ == "__main__":
     
