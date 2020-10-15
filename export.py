@@ -3,7 +3,7 @@
 # Autor:        Gabriel F
 # GitHub:       https://github.com/gab98fra/
 # Creado:       14 de Octubre 2020
-# Modificado:   14 de Octubre 2020
+# Modificado:   15 de Octubre 2020
 # Copyright:    (c) 2020 by Gabriel F, 2020
 # ----------------------------------------------------------------------------
 
