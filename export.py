@@ -9,7 +9,7 @@
 
 """
 
-    El siguiente scrip permite mostrar datos en una tabla, realizar vista previa de los datos, exportar a pdf
+    El siguiente GUI permite mostrar datos en una tabla, realizar vista previa de los datos, exportar a pdf
     e imprimir
 
     Python 3.8.2
