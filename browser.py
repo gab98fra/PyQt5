@@ -69,7 +69,7 @@ class event_key(QWidget):
         close = QMessageBox(self)
         close.setWindowTitle("¡Cerrar ventana!")
         close.setIcon(QMessageBox.Question)
-        close.setText("¿Estás seguro que desea salir Ventana?   ")
+        close.setText("¿Estás seguro que desea salir de la ventana?   ")
         #Opciones
         botonSalir = close.addButton("Salir", QMessageBox.YesRole)
         botonCancelar = close.addButton("Cancelar", QMessageBox.NoRole)
