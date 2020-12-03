@@ -1,6 +1,10 @@
 # PyQt5
 Librería PyQt5 para desarrollar aplicaciones GUI
 
+broser: permite acceder a un sitio web especificando la url
+
+<img src="https://github.com/gab98fra/PyQt5/blob/master/browser_img.PNG" alt="">
+
 qfiledialog : Permite abrir y guardar archivos .txt
 
 graph: gráfica circular o de pastel
