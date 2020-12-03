@@ -11,6 +11,8 @@ qfiledialog : Permite abrir y guardar archivos .txt
 
 graph: gráfica circular o de pastel
 
+<img src="https://github.com/gab98fra/PyQt5/blob/master/graph_img.PNG" alt="">
+
 slots: eventos mousePressEvent y clicked 
 
 key: eventos keyPressEvent y closeEvent
